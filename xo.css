@@ -1,0 +1,113 @@
+
+td
+{
+    border: 1px solid black;
+    width:50px;
+    height:50px;
+}
+
+body{
+    background: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#app{
+    max-width: 800px;
+    margin: auto;
+}
+
+#app > h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+}
+
+#score{
+    display: flex;
+    margin: auto;
+}
+
+.half{
+    width: 50%;
+}
+
+.input{
+    margin: auto;
+    height: 30px;
+}
+
+.input input{
+    border-width: 1px;
+    height: 23px;
+    padding: 0;
+    float: right;
+    width: 200px !important;
+    text-align: center;
+}
+
+.scoreBox{
+    background: white;
+    box-shadow: 0px 0px 8px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.scoreBox h1{
+    text-align: center;
+    font-size: 30px;
+    line-height: 0px;
+    font-style: italic;
+}
+
+#otherinputs{
+    margin: auto;
+    margin-top: 5px;
+    width: fit-content;
+    background: white;
+    box-shadow: 0px 0px 8px black;
+    padding: 15px;
+    text-align: center;
+}
+
+
+input[type="text"]:disabled {
+    background: white;
+    border: none;
+    font-size: 15px;
+    color: black;
+}
+
+#otherinputs select , #otherinputs input{
+    height:25px;
+}
+
+#board{
+    margin-top: 10px;
+    background: white;
+    box-shadow: 0px 0px 8px black;
+    padding: 15px;
+    text-align: center;
+}
+
+#board table{
+    margin: auto;
+}
+
+#say_hello{
+    font-size: 20px;
+    line-height: 0px;
+}
+
+#countdownx , #countdowno{
+    height: 20px;
+    text-align: center;
+}
+
+.turn{
+    box-shadow: 0px 0px 8px 5px #fcfc00;
+}
+
+.turn h1{
+    text-shadow: 2px 2px 7px #fcfc00;
+}

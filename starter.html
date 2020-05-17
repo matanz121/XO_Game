@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+	<script type="text/javascript" src="xo.js"></script>
+	<link rel="stylesheet" type="text/css" href="xo.css" />
+</HEAD>
+
+<BODY>
+	<div id="app">
+		<h1 id="gametitle">X O GAME !</h1>
+		<div id="score">
+			<div class="half">
+				<div id="xBox" class="scoreBox">
+					<h1>X</h1>
+					<div id="countdownx"></div>
+					<div class="input">Player X name:<input type="text" id="xname" required></div>
+					<div class="input">Color: <input type="color" name="xcolor" value="#4CAF50"></div>
+					<div class="input">Score:<input type="text" id="xscore" value="0" disabled></div>
+				</div>
+			</div>
+			<div class="half">
+				<div id="oBox" class="scoreBox">
+					<h1>O</h1>
+					<div id="countdowno"></div>
+					<div class="input">Player O name:<input type="text" id="oname" required></div>
+					<div class="input">Color: <input type="color" name="ocolor" value="#607D8B"></div>
+					<div class="input">Score:<input type="text" id="oscore" value="0" disabled></div>
+				</div>
+			</div>
+		</div>
+		<div id="otherinputs">
+			<div id="boardsize">
+				<select id="selRowNum">
+					<option value="">Choose Rows number</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+				<select id="selColNum">
+					<option value="">Choose Columns number</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select>
+				<input id = "start" type="button" onclick="buildBoard()" value="Start Game!">
+			</div>
+			<h1 id="say_hello" style="display:none"></h1>
+		</div>
+		<div id="board" style="display:none">
+		</div>
+	</div>
+</BODY>
+
+</HTML>
